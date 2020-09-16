@@ -1,13 +1,13 @@
 <template>
   <img
-    class="VuetifyLogo"
-    alt="Vuetify Logo"
-    src="vuetify-logo.svg"
+    class="ubiLogo"
+    alt="ubi Logo"
+    src="union-bank-of-india-vector-logo.png"
   >
 </template>
 
 <style>
-.VuetifyLogo {
+.ubiLogo {
   height: 50px;
   width: 50px;
 }
