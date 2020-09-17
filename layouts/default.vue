@@ -6,16 +6,16 @@
     <v-app-bar color="red" dark fixed app>
       <v-toolbar-title>Application</v-toolbar-title>
        <!-- Component Example -->
-      <VuetifyLogo/>
+      <UbiLogo/> <GlobalNavigation/>
     </v-app-bar>
 
     <!-- Body -->
     <v-content light>
-      <nuxt /> 
+      <nuxt /> <Carousel/>
     </v-content>
     
     <!-- Footer -->
-    <v-footer color="indigo" app>
+    <v-footer color="indigo" app> <FooterDown/>
       <span class="white--text">&copy; {{ new Date().getFullYear() }}</span>
     </v-footer>
 

@@ -1,7 +1,7 @@
 <template>
   <img
     class="ubiLogo"
-    alt="ubi Logo"
+    alt="ubiLogo"
     src="union-bank-of-india-vector-logo.png"
   >
 </template>
