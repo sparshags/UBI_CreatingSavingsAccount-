@@ -6,7 +6,7 @@
     <v-app-bar color="red" dark fixed app>
       <v-toolbar-title></v-toolbar-title>
        <!-- Component Example -->
-      <UbiLogo/> <GlobalNavigation/> <search/> 
+      <UbiLogo/> <GlobalNavigation/>  
     </v-app-bar>
 
     <!-- Body -->
@@ -19,6 +19,7 @@
                </v-content>
     
     <!-- Footer -->
+    <!-- footer is added and its size and color is defined. it is also justified to the center -->
     <v-footer color="#DA2627" app>
       <v-row justify="center">
       <img
