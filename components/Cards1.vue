@@ -1,9 +1,11 @@
 <template>
+<!-- the color class and width of the card is defined  -->
   <v-card
    color="#195289"
     class="mx-auto"
     max-width="1200">
-    
+    <!-- paragraph tag is used to diffrentiate between the header and te rest of the text -->
+    <!-- another component is table which is anoter component-->
     <v-card-text>
             <p class="display-1 text--primary">
         Features Of SBGEN
@@ -25,15 +27,6 @@ Rate of interest upto 25Lacs and more than
 25 lacs-3%p.a
       </div>
     </v-card-text>
-    <v-card-actions>
-       
-      <v-btn
-        text
-        color="deep-purple accent-4"
-      >
-       
-      </v-btn>
-      
-    </v-card-actions>
+    
   </v-card>
 </template>

@@ -1,8 +1,11 @@
 <template>
+<!-- the color class and width of the card is defined  -->
   <v-card
   color="#195289"
     class="mx-auto"
     max-width="500">
+     <!-- paragraph tag is used to diffrentiate between the header and te rest of the text -->
+    <!-- another component is table which is anoter component-->
     <v-card-text>
             <p class="display-1 text--primary">
         Features Of UDSA

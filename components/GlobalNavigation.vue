@@ -1,9 +1,10 @@
 <template>
+<!-- global navigation elements are defined such as color and the tabs -->
   <v-tabs
      
     color="white"
   background-color="#E22026"
-  max-width="1200"
+  
     dark>
     <v-tab>
       PRODUCTS
