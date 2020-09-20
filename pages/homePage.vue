@@ -1,5 +1,5 @@
 <template>
-  <!--Your App Starts Here -->
+  <!--this is the redirect  -->
   <v-app id="inspire">
     
    

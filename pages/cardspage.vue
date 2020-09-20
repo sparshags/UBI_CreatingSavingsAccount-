@@ -5,20 +5,21 @@
     <!--Header -->
     <v-app-bar color="red" dark fixed app>
       <v-toolbar-title></v-toolbar-title>
-       <!-- Component Example -->
+       <!-- Component such as the logo and the global navigation are linked here -->
       <UbiLogo/> <GlobalNavigation/>
     </v-app-bar>
 
     <!-- Body -->
+    <!-- breadcrumb and all 3 cards are set in columns and cetered -->
     <v-content light>
       <NavBreadcrumb/>
       <nuxt /> 
             <v-row justify="center">
         <v-col md="3">
-           <Cards1/> 
+           <Cards2/> 
            </v-col>
            <v-col md="3">
-             <Cards2/> 
+             <Cards1/> 
            </v-col>
            <v-col md="3">
              <Cards3/> 
@@ -31,10 +32,7 @@
       
                </v-content>
     
-    <!-- Footer -->
-    <v-footer color="red" app>
-      <span class="white--text">&copy; {{ new Date().getFullYear() }}</span>
-    </v-footer>
+    
 
   </v-app>
 </template>
