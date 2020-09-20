@@ -2,13 +2,13 @@
   <img
     class="ubiLogo"
     alt="ubiLogo"
-    src="union-bank-of-india-vector-logo.png"
+    src="UbiLogoWhiteBg.jpg"
   >
 </template>
 
 <style>
 .ubiLogo {
-  height: 50px;
-  width: 50px;
+  height: 70px;
+  width: 150px;
 }
 </style>

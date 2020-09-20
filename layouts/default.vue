@@ -4,19 +4,35 @@
     
     <!--Header -->
     <v-app-bar color="red" dark fixed app>
-      <v-toolbar-title>Application</v-toolbar-title>
+      <v-toolbar-title></v-toolbar-title>
        <!-- Component Example -->
-      <UbiLogo/> <GlobalNavigation/>
+      <UbiLogo/> <GlobalNavigation/> <search/> 
     </v-app-bar>
 
     <!-- Body -->
     <v-content light>
-      <nuxt /> <Carousel/>
-    </v-content>
+      
+      <nuxt /> 
+            
+          
+          
+               </v-content>
     
     <!-- Footer -->
-    <v-footer color="indigo" app> <FooterDown/>
-      <span class="white--text">&copy; {{ new Date().getFullYear() }}</span>
+    <v-footer color="#DA2627" app>
+      <v-row justify="center">
+      <img
+    class="footer"
+    alt="footer"
+    src="footer.png"
+  >
+  <style>
+.footer {
+  height: 170px;
+  width: 700px;
+}
+</style>
+      </v-row>
     </v-footer>
 
   </v-app>
@@ -27,12 +43,12 @@ export default {}
 </script>
 
 <style> 
-  .white--text {
+  .blue--text {
     border: 1px solid;
   }
 
    #inspire {
-    background-color: white;
+    background-color: rgb(204, 204, 204);
     color: black; 
   }
 </style>
