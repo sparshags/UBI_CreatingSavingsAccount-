@@ -14,14 +14,27 @@
     <v-content light>
       <NavBreadcrumb/>
       <nuxt /> 
+      
             <v-row justify="center">
-        <v-col md="3">
+        <v-col v-for="i in 3"
+    :key=i
+    cols="12"
+    md="4"
+    sx="4">
            <Cards2/> 
            </v-col>
-           <v-col md="3">
+           <v-col v-for="i in 3"
+    :key=i
+    cols="12"
+    md="4"
+    sx="4">
              <Cards1/> 
            </v-col>
-           <v-col md="3">
+           <v-col v-for="i in 3"
+    :key=i
+    cols="12"
+    md="4"
+    sx="4">
              <Cards3/> 
            </v-col>
           
