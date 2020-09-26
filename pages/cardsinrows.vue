@@ -11,8 +11,9 @@
     >
 
       <v-card
-        class="ma-3 pa-3"
-      >
+         class="pa-md-4 pa-sm-4 pa-xs-4 mx-lg-auto mx-sm-auto"
+    color="blue"
+    width="150px" >
         <v-card-text>
           Centered
         </v-card-text>
