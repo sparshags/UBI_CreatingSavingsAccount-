@@ -1,55 +1,70 @@
 <template>
-  <!--Your App Starts Here -->
-  <v-app id="inspire">
-    
-    <!--Header -->
-    <v-app-bar color="red" dark fixed app>
-      <v-toolbar-title></v-toolbar-title>
-       <!-- Component Example -->
-      <UbiLogo/> <GlobalNavigation/>  
-    </v-app-bar>
-
-    <!-- Body -->
-    <v-content light>
+    <!--Your App Starts Here -->
+    <v-app id="inspire">
       
-      <nuxt /> 
-            
-          
-          
-               </v-content>
-    
-    <!-- Footer -->
-    <!-- footer is added and its size and color is defined. it is also justified to the center -->
-    <v-footer color="#DA2627" app>
-      <v-row justify="center">
-      <img
-    class="footer"
-    alt="footer"
-    src="footer.png"
-  >
-  <style>
-.footer {
-  height: 170px;
-  width: 700px;
-}
-</style>
-      </v-row>
-    </v-footer>
+      <!--Header -->
+      <v-app-bar color="#E22026" dark fixed app>
+        <!-- <v-toolbar-title>Application</v-toolbar-title> -->
+        <!-- Component Example -->
+        
+        <Ubilogo/> 
+        <v-col>
+          </v-col>
+        <v-row class="hidden-sm-and-down">
+          <!-- tab will be hidden in sm(i pad) and other big screen. It is only for mobile screen -->
+          <tab/> 
+        </v-row>
+        <v-row class="hidden-md-and-up">
+          <v-col sm="8"></v-col>
+          <v-col sm="1" class="mb-sm-2 ma-sm-2 mb-2 ma-2 mx-0" >
+          <!-- mb-margin bellow ma-margin above mx-margin from both side -->
+          <hamburger/>
+          </v-col>
+          </v-row>
+        <v-col class="hidden-sm-and-down">
+          </v-col>
+        <v-row class="hidden-sm-and-down">
+        <v-img
+        class="mx-auto"
+        src= "textbox.jpg">
+        </v-img>
+        </v-row>
+        <v-btn icon>
+            <v-icon>mdi-magnify</v-icon>
+        </v-btn>
+        
+      </v-app-bar> 
 
-  </v-app>
-</template>
+      <!-- Body -->
+      <v-content light>
+      <navbreadcrumb/>
+        <nuxt /> 
+      </v-content> 
+      
+      
+      <!-- Footer -->
+      <v-footer color="#E22026" app>
+      <v-img
+      class="mx-auto"
+      src="footernav.jpg">
+      </v-img>
+        <span class="white--text">&copy; {{ new Date().getFullYear() }}</span>
+        </v-footer>
 
-<script>
-export default {}
-</script>
+    </v-app>
+  </template>
 
-<style> 
-  .blue--text {
-    border: 1px solid;
-  }
+  <script>
+  export default {}
+  </script>
 
-   #inspire {
-    background-color: rgb(204, 204, 204);
-    color: black; 
-  }
-</style>
+  <style> 
+    .white--text {
+      border: 1px solid;
+    }
+
+    #inspire {
+      background-color: #9E9E9E;
+      color: rgb(255, 255, 255);
+    }
+  </style>

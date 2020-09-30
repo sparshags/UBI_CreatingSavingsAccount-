@@ -1,8 +1,7 @@
 <template>
-<v-container>
-    <v-row
-    no-gutters
-    >
+<v-container class="10">
+    <v-layout row>
+          
     <v-col
     v-for="i in 3"
     :key=i
@@ -20,9 +19,9 @@
       </v-card>
 
     </v-col>
-    </v-row>
+    </v-layout>
 
-  <v-row
+  <v-layout row
     no-gutters
     >
     <v-col
@@ -41,6 +40,7 @@
       </v-card>
 
     </v-col>
-    </v-row>
+     
+    </v-layout>
 </v-container>
   </template>
