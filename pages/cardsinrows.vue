@@ -14,7 +14,7 @@
     color="blue"
     width="150px" >
         <v-card-text>
-          Centered
+          mid Centered
         </v-card-text>
       </v-card>
 
