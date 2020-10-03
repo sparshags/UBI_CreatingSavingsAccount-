@@ -53,7 +53,7 @@
     }
 
     #inspire {
-      background-color: #ffc1c1;
-      color: rgb(255, 255, 255);
+      background-color: #fcd6d6;
+      color: rgb(5, 5, 5);
     }
   </style>
