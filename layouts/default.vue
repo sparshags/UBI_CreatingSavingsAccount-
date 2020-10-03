@@ -8,48 +8,37 @@
         <!-- Component Example -->
         
         <Ubilogo/> 
-        <v-col>
-          </v-col>
+        
         <v-row class="hidden-sm-and-down">
-          <!-- tab will be hidden in sm(i pad) and other big screen. It is only for mobile screen -->
-          <tab/> 
+          <!-- tab will be hidden in sm(i pad) and other small screen. It is only for mobile screen -->
+          <GlobalNavigation/> 
         </v-row>
         <v-row class="hidden-md-and-up">
-          <v-col sm="8"></v-col>
+          <!-- <v-col sm="8"></v-col> -->
           <v-col sm="1" class="mb-sm-2 ma-sm-2 mb-2 ma-2 mx-0" >
           <!-- mb-margin bellow ma-margin above mx-margin from both side -->
           <hamburger/>
           </v-col>
           </v-row>
-        <v-col class="hidden-sm-and-down">
-          </v-col>
-        <v-row class="hidden-sm-and-down">
-        <v-img
-        class="mx-auto"
-        src= "textbox.jpg">
-        </v-img>
-        </v-row>
-        <v-btn icon>
+        <!-- <v-btn icon>
            
         </v-btn>
-        
+         -->
       </v-app-bar> 
 
       <!-- Body -->
       <v-content light>
-      <navbreadcrumb/>
+      <NavBreadcrumb/>
         <nuxt /> 
       </v-content> 
       
       
-      <!-- Footer -->
-      <v-footer color="#E22026" app>
-      <v-img
-      class="mx-auto"
-      src="footernav.jpg">
-      </v-img>
-        <span class="white--text">&copy; {{ new Date().getFullYear() }}</span>
-        </v-footer>
+     
+    <!-- Footer -->
+    <v-footer color="indigo" app>
+    <span class="white--text">&copy; {{ new Date().getFullYear() }}</span>
+    </v-footer>
+
 
     </v-app>
   </template>

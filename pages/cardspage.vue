@@ -12,7 +12,7 @@
     <!-- Body -->
     <!-- breadcrumb and all 3 cards are set in columns and cetered -->
     <v-content light>
-      <NavBreadcrumb/>
+     
       <nuxt /> 
       
             <v-row justify="center">
