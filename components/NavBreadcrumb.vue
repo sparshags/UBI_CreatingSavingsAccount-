@@ -6,7 +6,7 @@
    
   </div>
 </template>
-//the homepage page is linked to the breadcrumb to show that the breadcrumb works unlike the original design of the website 
+// the homepage page is linked to the breadcrumb to show that the breadcrumb works unlike the original design of the website 
 <script>
   export default {
     data: () => ({
