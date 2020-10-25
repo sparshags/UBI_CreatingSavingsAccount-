@@ -50,7 +50,7 @@
       </v-container>
                </v-content>
     <!-- Footer -->
-   <FotterForPage/>
+   
 
   </v-app>
 </template>

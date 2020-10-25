@@ -30,6 +30,7 @@
       <v-content light>
       <NavBreadcrumb/>
         <nuxt /> 
+        <FotterForPage/>
       </v-content> 
       
       
@@ -51,7 +52,7 @@
     }
 
     #inspire {
-      background-color: #fcd6d6;
+      background-color: #fffdfd;
       color: rgb(5, 5, 5);
     }
   </style>
