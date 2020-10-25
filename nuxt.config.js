@@ -7,7 +7,7 @@ export default {
   */
   mode: 'spa',
   router: {
-    base: '/UBI_CreatingSavingsAccount/'
+    base: '/UBI_CreatingSavingsAccount-/'
   },
   /*
   ** Nuxt target
