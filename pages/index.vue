@@ -4,7 +4,7 @@
     
     <!--Header -->
     <v-app-bar color="red" dark fixed app>
-      <v-toolbar-title></v-toolbar-title>
+      
        <!-- Component Example -->
        <v-row class="hidden-sm-and-down">
 <v-col sm="10">
@@ -34,7 +34,7 @@
       <v-container>
             <v-row justify="center">
         <v-col cols="10" sm="4" md="3">
-           <Cards1/> 
+           <v-hover><Cards1/> </v-hover>
            </v-col>
            <v-col cols="10" sm="4" md="3">
              <Cards2/> 
@@ -49,11 +49,8 @@
        </v-row>
       </v-container>
                </v-content>
-    
     <!-- Footer -->
-    <v-footer color="red" app>
-      <span class="white--text">&copy; {{ new Date().getFullYear() }}</span>
-    </v-footer>
+   <FotterForPage/>
 
   </v-app>
 </template>

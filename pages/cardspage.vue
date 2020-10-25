@@ -28,7 +28,7 @@
     cols="12"
     md="4"
     sx="4">
-             <Cards1/> 
+             <Cards1try/> 
            </v-col>
            <v-col v-for="i in 3"
     :key=i

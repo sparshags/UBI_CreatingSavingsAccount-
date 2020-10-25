@@ -30,3 +30,8 @@ Rate of interest upto 25Lacs and more than
     
   </v-card>
 </template>
+<script>
+  export default {
+  }
+  
+</script>
