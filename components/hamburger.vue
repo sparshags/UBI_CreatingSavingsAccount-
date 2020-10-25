@@ -1,10 +1,11 @@
 <template>
   <div class="text-center">
-    <!-- open on hoven command allows the card to slide down when hovered upon -->
+    <!-- open on click command allows the card to show options when clicked -->
     <v-menu
-      open-on-hover
+      open-on-click
       top
       offset-y>
+      <!-- the slot is activated when clicked -->
       <template v-slot:activator="{ on, attrs }">
         <v-btn
           color="#E22026"

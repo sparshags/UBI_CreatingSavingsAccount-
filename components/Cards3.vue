@@ -29,12 +29,5 @@ more than 25 lacs 4% p.a.<br>
 
       </div>
     </v-card-text>
-    <v-card-actions>
-      <v-btn
-        text
-        color="deep-purple accent-4"
-      >
-              </v-btn>
-    </v-card-actions>
-  </v-card>
+    </v-card>
 </template>

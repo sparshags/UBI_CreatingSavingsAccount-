@@ -3,7 +3,7 @@
 <!-- valid means a function has to take place in order fro the button to get activated -->
   <v-form
     ref="form"
-    v-model="valid"
+    v-model="validate"
     lazy-validation
   >
     
@@ -27,15 +27,3 @@
     
   </v-form>
 </template>
-<script>
-var vm = new validate({
-  data: {
-    // declare message with an empty value
-    message: 'You must agree to continue!'
-  },
-  template: '<div>{{You must agree to continue!}}</div>'
-})
-// set `message` later
-vm.message = 'You must agree to continue!'
-</script>
-

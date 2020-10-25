@@ -2,6 +2,7 @@
   <v-simple-table >
    <!-- the elements of the table are grouped row wise -->
     <template v-slot:default>
+      <!-- each tr tag repersents one row -->
       <thead>
         <tr>
           <th class="text-left">Centers</th>
@@ -29,8 +30,7 @@
           <th class="text-left">500</th>
         </tr>
       </thead>
-      <!-- tbody function is used to show blocked text that is not displayed -->
-      
+          
       <!-- table is listed in one of the cards to represent data visually -->
     </template>
   </v-simple-table>

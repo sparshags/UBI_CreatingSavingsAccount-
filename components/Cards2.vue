@@ -35,13 +35,5 @@ etc- No Charges via all Digital Platforms.<br>
 Redeem Points for Every On-Line Transaction.<br>
       </div>
     </v-card-text>
-    <v-card-actions>
-      <v-btn
-        text
-        color="deep-purple accent-4"
-      >
-       
-      </v-btn>
-    </v-card-actions>
-  </v-card>
+     </v-card>
 </template>
