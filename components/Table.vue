@@ -30,12 +30,7 @@
         </tr>
       </thead>
       <!-- tbody function is used to show blocked text that is not displayed -->
-      <tbody>
-        <tr v-for="item in desserts" :key="item.name">
-          <td>{{ item.name }}</td>
-          <td>{{ item.calories }}</td>
-        </tr>
-      </tbody>
+      
       <!-- table is listed in one of the cards to represent data visually -->
     </template>
   </v-simple-table>

@@ -7,7 +7,7 @@
       offset-y>
       <template v-slot:activator="{ on, attrs }">
         <v-btn
-          color="primary"
+          color="#E22026"
           dark
           v-bind="attrs"
           v-on="on"

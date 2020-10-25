@@ -3,11 +3,11 @@
     <v-app id="inspire">
       
       <!--Header -->
-      <v-app-bar color="#E22026" dark fixed app>
+      <v-app-bar color="red darken-4" dark fixed app>
         <!-- <v-toolbar-title>Application</v-toolbar-title> -->
         <!-- Component Example -->
         
-        <Ubilogo/> 
+        <UbiLogo/> 
         
         <v-row class="hidden-sm-and-down">
           <!-- tab will be hidden in sm(i pad) and other small screen. It is only for mobile screen -->

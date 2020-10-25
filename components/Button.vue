@@ -27,4 +27,15 @@
     
   </v-form>
 </template>
+<script>
+var vm = new validate({
+  data: {
+    // declare message with an empty value
+    message: 'You must agree to continue!'
+  },
+  template: '<div>{{You must agree to continue!}}</div>'
+})
+// set `message` later
+vm.message = 'You must agree to continue!'
+</script>
 
