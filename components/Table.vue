@@ -35,7 +35,5 @@
     </template>
   </v-simple-table>
 </template>
-<script>
-export default {}
-</script>
+
 

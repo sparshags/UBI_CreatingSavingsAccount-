@@ -1,7 +1,8 @@
 <template>
   <form>
     <!--the validated checkbox is taken from form -->
-    <!--  -->
+    <!--label shows the text to be displayed   -->
+
       <v-checkbox 
       v-model="checkbox"
       color="black" light fixed app
@@ -10,10 +11,10 @@
       required
       @change="$v.checkbox.$touch()"
       @blur="$v.checkbox.$touch()"
-    ></v-checkbox>
-     
-
-    <v-btn
+    >
+    <!-- class color and click is defined -->
+    </v-checkbox>
+       <v-btn
     color="#195289"
       class="mr-4"
       @click="submit"

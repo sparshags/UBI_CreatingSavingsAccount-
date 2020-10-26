@@ -3,7 +3,8 @@
     <v-container>
       <v-row>
         <v-col cols="12" sm="2" md="2" class="mr-md-5 ml-md-6 mx-sm-4">
-          <!-- for each column a header is defined and then a devider is added in order to create a difference between the header and rest of the list  -->
+          <!-- for each column a header is defined and then a devider is added 
+          in order to create a difference between the header and rest of the list  -->
           <h5>About Us</h5>
           <!-- font size is defined -->
           <v-divider></v-divider>
@@ -79,6 +80,7 @@
           <v-divider></v-divider><br />
           <v-row>
             <!-- icons are added from vue library -->
+            <!-- icons are buttons -->
             <v-btn icon color="white" class="mt-16 mr-md-2 mr-sm-2 ml-1">
               <v-icon medium>mdi-instagram</v-icon>
             </v-btn>
@@ -91,6 +93,10 @@
             </v-btn>
             <v-btn icon color="white" class="mt-16 mr-md-2 mr-sm-2">
               <v-icon medium>mdi-whatsapp</v-icon>
+            </v-btn>
+            <div></div>
+            <v-btn color="transparent">
+              Report a Fraud
             </v-btn>
           </v-row>
         </v-col>
