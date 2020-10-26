@@ -1,9 +1,17 @@
 <template>
 <!-- the color class and width of the card is defined  -->
+<!-- hover function is added to make it more similar to redesign -->
+<!-- open delay is added -->
+<v-hover
+ v-slot="{ hover }"
+        open-delay="200">
+         <!--the hover function is defined and given its properties  -->
   <v-card
-  color="#195289"
-    class="mx-auto"
-    max-width="500">
+  :elevation="hover ? 16 : 2"
+          :class="{ 'on-hover': hover }"
+          class="mx-auto"
+          max-width="1200"
+          color="#195289">
      <!-- paragraph tag is used to diffrentiate between the header and te rest of the text -->
     <!-- another component is table which is anoter component-->
     <v-card-text>
@@ -30,4 +38,5 @@ more than 25 lacs 4% p.a.<br>
       </div>
     </v-card-text>
     </v-card>
+</v-hover>
 </template>

@@ -2,7 +2,8 @@
   <div class="text-center">
     <!-- open on click command allows the card to show options when clicked -->
     <v-menu
-      open-on-click
+      open-on-hover
+      color="white" light           
       top
       offset-y>
       <!-- the slot is activated when clicked -->
@@ -14,7 +15,13 @@
           v-on="on"
           height="48"
           width="20">
-          MENU
+          <!-- a hamburger icon is added to make it easier for the user to understand -->
+           <img
+    class="Asset1"
+    alt="Asset1"
+    src="Asset1.png"
+  >
+          
         </v-btn>
       </template>
 
@@ -29,7 +36,7 @@
     </v-menu>
   </div>
 </template>
-
+// the items are defined 
 <script>
   export default {
     data: () => ({
@@ -44,3 +51,10 @@
     }),
   }
 </script>
+// dimensions of the icon is defined
+<style>
+.Asset1 {
+  height: 30px;
+  width: 30px;
+}
+</style>

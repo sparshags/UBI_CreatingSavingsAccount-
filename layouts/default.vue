@@ -3,7 +3,7 @@
     <v-app id="inspire">
       
       <!--Header -->
-      <v-app-bar color="red darken-4" dark fixed app>
+      <v-app-bar color="#E22026" dark fixed app>
         <!-- <v-toolbar-title>Application</v-toolbar-title> -->
         <!-- Component Example -->
         
@@ -30,6 +30,7 @@
       <v-content light>
       <NavBreadcrumb/>
         <nuxt /> 
+        <!-- footer -->
         <FotterForPage/>
       </v-content> 
       
@@ -45,14 +46,16 @@
   <script>
   export default {}
   </script>
-
-  <style> 
+<style> 
     .white--text {
       border: 1px solid;
     }
 
     #inspire {
-      background-color: #fffdfd;
-      color: rgb(5, 5, 5);
+      background-color: #ffffff;
+      color: rgb(0, 0, 0);
     }
   </style>
+
+
+  

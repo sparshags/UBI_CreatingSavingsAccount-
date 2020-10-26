@@ -1,43 +1,42 @@
 <template>
   <div>
-    <!-- format of the breadcrumb is provided -->
-    <v-breadcrumbs :items="items" divider="/"></v-breadcrumbs>
-
-   
+    <v-breadcrumbs :items="items">
+      <template v-slot:divider>
+        <!-- Added color=black to make the icon black as the background is light -->
+        <v-icon color="red">mdi-chevron-right</v-icon>
+      </template>
+    </v-breadcrumbs>
   </div>
 </template>
-// the homepage page is linked to the breadcrumb to show that the breadcrumb works unlike the original design of the website 
+
 <script>
-  export default {
-    data: () => ({
-      items: [
-        {
-          text: 'Home ',
-          disabled: false,
-          href: 'homePage',
-        },
-        {
-          text: 'Product',
-          disabled: false,
-          href: 'breadcrumbs_link_1',
-        },
-        {
-          text: 'Personal ',
-          disabled: false,
-          href: 'breadcrumbs_link_1',
-        },
-        {
-          text: 'Accounts & Deposits',
-          disabled: false,
-          href: 'breadcrumbs_link_2',
-        },
-        {
-          text: 'Savings Account',
-          disabled: true,
-          href: 'breadcrumbs_link_2',
-        },
-        
-      ],
-    }),
-  }
+export default {
+  data: () => ({
+    items: [
+      {
+        text: "Home",
+        // This function helps to show on which page we are not there, when its false the colur of text is blue
+        disabled: false,
+        // href: 'homePage',
+      },
+      {
+        text: "Product",
+        disabled: false,
+        // the href is commented out as my flow is on one page  and there are no pages to add to href
+        // href: 'breadcrumbs_link_1',
+      },
+      {
+        text: "Accounts And Deposit",
+        disabled: false,
+        // href: 'breadcrumbs_link_2',
+      },
+      {
+        text: "Savings Account",
+        disabled: false,
+        // href: 'breadcrumbs_link_3',
+      },
+    ],
+  }),
+};
 </script>
+

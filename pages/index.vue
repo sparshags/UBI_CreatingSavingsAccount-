@@ -31,10 +31,11 @@
     <v-content light>
      
       <nuxt /> 
+      <!-- a container is added in order to align it properly in all type of devices -->
       <v-container>
             <v-row justify="center">
         <v-col cols="10" sm="4" md="3">
-           <v-hover><Cards1/> </v-hover>
+           <Cards1/>
            </v-col>
            <v-col cols="10" sm="4" md="3">
              <Cards2/> 

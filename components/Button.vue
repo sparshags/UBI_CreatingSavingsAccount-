@@ -1,29 +1,67 @@
 <template>
-<!-- The validate button has been taken from a form and adjusted according to layout -->
-<!-- valid means a function has to take place in order fro the button to get activated -->
-  <v-form
-    ref="form"
-    v-model="validate"
-    lazy-validation
-  >
-    
-<!-- the below function defines the task to be completed in order to validate the button  -->
-    <v-checkbox textcolor="black"
+  <form>
+    <!--the validated checkbox is taken from form -->
+    <!--  -->
+      <v-checkbox 
       v-model="checkbox"
-      :rules="[v => !!v || 'You must agree to continue!']"
-      label="I have read all the features and understood them."
+      color="black" light fixed app
+      :error-messages="checkboxErrors"
+      label="Check if Read and Understood all the features"
       required
+      @change="$v.checkbox.$touch()"
+      @blur="$v.checkbox.$touch()"
     ></v-checkbox>
-<!-- color of the button has been changed -->
-    
-    <v-btn
-      color="#195289"
-      class="mr-4"
-      @click="validate"
-    >
-      Apply
-    </v-btn>
+     
 
+    <v-btn
+    color="#195289"
+      class="mr-4"
+      @click="submit"
+    >
+      submit
+    </v-btn>
     
-  </v-form>
+  </form>
 </template>
+
+<script>
+  import { validationMixin } from 'vuelidate'
+  import { required, maxLength, email } from 'vuelidate/lib/validators'
+
+  export default {
+    mixins: [validationMixin],
+
+    validations: {
+         
+      checkbox: {
+        checked (val) {
+          return val
+        },
+      },
+    },
+
+    data: () => ({
+      
+      checkbox: false,
+    }),
+
+    computed: {
+      checkboxErrors () {
+        const errors = []
+        if (!this.$v.checkbox.$dirty) return errors
+        !this.$v.checkbox.checked && errors.push('Must Check to proceed ')
+        return errors
+      },
+      },
+
+    methods: {
+      submit () {
+        this.$v.$touch()
+      },
+      clear () {
+        this.$v.$reset()
+        this.checkbox = false
+      },
+    },
+  }
+</script>

@@ -1,5 +1,5 @@
 <template>
-  <v-simple-table >
+  <v-simple-table light >
    <!-- the elements of the table are grouped row wise -->
     <template v-slot:default>
       <!-- each tr tag repersents one row -->
@@ -35,4 +35,7 @@
     </template>
   </v-simple-table>
 </template>
+<script>
+export default {}
+</script>
 
