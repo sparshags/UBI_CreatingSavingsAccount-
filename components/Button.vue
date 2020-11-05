@@ -7,7 +7,7 @@
       v-model="checkbox"
       color="black" light fixed app
       :error-messages="checkboxErrors"
-      label="I have read all the above features and understood them."
+      label="I have read all the above features and understood them ."
       required
       @change="$v.checkbox.$touch()"
       @blur="$v.checkbox.$touch()"
