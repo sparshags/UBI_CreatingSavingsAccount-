@@ -9,17 +9,18 @@
       <!-- the slot is activated when clicked -->
       <template v-slot:activator="{ on, attrs }">
         <v-btn
-          color="#E22026"
+          color="#FF0000"
           dark
           v-bind="attrs"
           v-on="on"
           height="48"
           width="20">
           <!-- a hamburger icon is added to make it easier for the user to understand -->
+          <!-- icon is used from static -->
            <img
-    class="Asset1"
-    alt="Asset1"
-    src="Asset1.png"
+    class="Asset5"
+    alt="Asset5"
+    src="Asset5.png"
   >
           
         </v-btn>

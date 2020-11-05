@@ -3,7 +3,7 @@
   <v-tabs
      
     color="white"
-  background-color="#E22026"
+  background-color="#FF0000"
   
     dark>
     <v-tab>

@@ -20,10 +20,15 @@
           <hamburger/>
           </v-col>
           </v-row>
-        <!-- <v-btn icon>
-           
-        </v-btn>
-         -->
+          <v-row class="hidden-md-and-up">
+          <!-- <v-col sm="8"></v-col> -->
+          <v-col sm="1" class="mb-sm-2 ma-sm-2 mb-2 ma-2 mx-0" >
+          <!-- mb-margin bellow ma-margin above mx-margin from both side -->
+          <searcicon/>
+          </v-col>
+          </v-row>
+         
+        
       </v-app-bar> 
 
       <!-- Body -->
